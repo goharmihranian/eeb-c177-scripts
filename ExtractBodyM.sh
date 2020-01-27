@@ -4,4 +4,4 @@ tail +2 Pacifici2013_data.csv | cut -d ";" -f 2-6 | tr ";" " " | sort -r -n -k 6
 #tr was used to replace the delimiter to a space instead of the orignal semicolon
 #sort was used to organize the file in reverse order and numerically for the column 6
 #> bodym.csv was used to place the output into into said file
-#PATH will run the script if you specify where it is
+#!/bin/bash will run the script automatically
