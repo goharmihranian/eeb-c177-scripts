@@ -4,5 +4,5 @@
 # change delimiter to spaces
 #sort according to the 6th (numeric) column in descending order
 #redirected to a file
-tail -n +2 $1 | cut -d ';' -f 2-6 | tr ";" " " | sort -r -n -k 6 > $2
+tail -n +2 $1 | cut -d $3 -f 2-6 | tr -s $3 '' | sort -r -n -k 6 > $2
 
